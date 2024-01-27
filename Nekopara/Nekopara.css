@@ -1,0 +1,601 @@
+/* Nekopara Theme made by Lycelra_*/
+/* For more info please visit http://myanimelist.net/forum/?topicid=1397924 */
+
+/* begin https://dl.dropboxusercontent.com/s/5bqt28s7mhd7onf/Nekopara.css?dl=0 */
+/*			 
+/       This is my first project.	 
+/	       ^_^		 
+/   Please point out my mistake!	 
+/    Yoroshiku Onegai Shimasu !
+/              Made by Lycelra_ 	 
+/		                 */
+
+@\import "https://fonts.googleapis.com/css?family=Viga";
+
+* {
+	text-decoration: none;
+}
+
+/* BACKGROUND IMAGE */
+
+body {
+	background-attachment: fixed;
+	background-image: url(http://i.imgur.com/YnMlxrq.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Viga !important;
+}
+
+/* GENERAL */
+
+a {
+	color: #ffd700;
+}
+
+a :hover {
+	color: #ffa500 !important;
+	transition: all 0.4s ease 0s;
+}
+
+body {
+	background-color: transparent;
+	color: #000000;
+}
+
+#list_surround {
+	font-size: 14px;
+	height: 200px;
+	left: 2%;
+	line-height: 1;
+	padding-bottom: 10px;
+	padding-left: 0;
+	padding-right: 0;
+	position: absolute;
+	top: 0;
+	width: 650px;
+}
+
+/*  I found the code on MAL from SylakentH !
+And some various sources too ~
+Thanks for your help !!! Credits to SylakentH
+& some anonymous & yet my friends too !
+I don't hold the credits for this section ! */
+
+.table_header {
+    padding-bottom: 4px;
+}
+.table_header span {
+    display: none;
+}
+.table_header:nth-child(2) {
+    text-align: left;
+}
+[cellspacing="0"] {
+    line-height: 17px;
+}
+.td1, .td2 {
+   	background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    vertical-align: top;
+  	border-bottom:1px dashed #ff6f69;
+    padding: 4px 0;
+    transition: background-color 1s linear 0s;
+
+}
+.animetitle + small {
+    color: #ff69b4 !important;
+    visibility: visible !important;
+    padding:2px;
+    background: none repeat scroll 0% 0% #ffe4e1;
+    border-radius:5px;
+    box-shadow: inset 0 0 2px  white;
+    text-shadow: 0px 1px black;
+}
+#list_surround small {
+    visibility: hidden;
+}
+#list_surround small a:last-of-type {
+    display: none !important;
+}
+td[class^="td"]:nth-child(2) {
+    text-align: left;
+    text-shadow: 1px 1px 3px #FFFFFF;
+}
+
+#list_surround a[href*="http://myanimelist.net/panel.php?go=edit"], #list_surround a[href*="http://myanimelist.net/editlist.php?type="], #list_surround a[href*="http://myanimelist.net/panel.php?go=add"] {
+    margin-right: 10px;
+    visibility: visible !important;
+}
+
+tr:hover td[class^="td"] {
+    background-color: #ffeead;
+}
+tr:hover td.td1 a, tr:hover td.td1, tr:hover td.td2 a, tr:hover td.td2 {
+    color: #8b795e;
+    text-shadow: 0 0 1px #FFFFFF;
+  /*transition: all 0.4s ease 0s;*/
+}
+
+.table_headerLink {
+    color: #FFFFFF ;
+    line-height: 20px;
+}
+td[class^="td"]:nth-child(3), td[class^="td"]:nth-child(3) a {
+    color: #fa8072 ;
+    text-shadow: 1px 1px 3px #FFFFFF;
+}
+td[class^="td"]:nth-child(5), td[class^="td"]:nth-child(5) a {
+    color: #fa8072 ; 
+    text-shadow: 1px 1px 3px #FFFFFF;
+  
+}
+td[class^="td"]:first-child {
+    border-left: 0px solid #ff6f69 !important;
+}
+td[class^="td"]:last-child {
+    border-right: 0px solid #FFFFFF !important;
+}
+.table_header {
+    background-color: #a52a2a;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0px 0 0;
+    letter-spacing: 1px;
+    padding:2px;
+    border-bottom: 3px solid #ff6f69;
+}
+.table_header:first-child {
+    border-left: 0px solid #FFFFFF !important;
+    border-radius: 16px 0 0 0;
+    border-right: 0px;
+    border-bottom: 3px solid #ff6f69 !important;
+    border-top: 0px solid #FFFFFF !important;
+}
+.table_header:nth-child(5) {
+    border-radius: 0 16px 0 0;
+    border-right: 0px solid #FFFFFF !important;
+}
+
+.category_totals {
+    background-color: #ffc3a0;
+    border-top: 2px solid #FFFFFF;
+    border-radius: 0 0 16px 16px;
+    color: #FFFFFF;
+    padding: 3px 3px 9px;
+    text-align: center;
+}
+
+#grand_totals {
+    background-color: #ffd39b;
+    border-color: #8b7355;
+    border-radius: 12px 12px 12px 12px;
+    border-style: solid;
+    border-width: 2px;
+    color: #8b2323;
+    display: block;
+    margin-top: 50px;
+    padding: 0 10px 10px;
+    position: absolute;
+    text-align: center;
+    width: calc(100% - 24px);
+  padding-top:10px;
+}
+
+td[class^="td"]:nth-of-type(2) {
+    width: 454px !important;
+}
+
+/*	EDIT BUTTONS	      */
+
+#list_surround table:nth-of-type(n+4) tbody div small {
+    letter-spacing: -25px;
+    visibility: visible;
+  color: transparent !important;
+  
+}
+#list_surround table:nth-of-type(n+4) tbody small a:first-of-type {
+    display: inline-block !important;
+  opacity: 0;
+}
+#list_surround table:nth-of-type(n+4) tbody small a:last-of-type {
+    display: none !important;
+}
+#list_surround table:nth-of-type(n+4) tbody:hover small a:first-of-type {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none
+    color: white ;
+    display: inline-block !important;
+    position: relative !important;
+    text-align: left;
+    visibility: visible; 
+    opacity: 1 !important;
+    transition: all 0.8s ease 0s;
+  letter-spacing: 1px;
+  float: right;
+  padding-left: 5px;
+}
+.td1 div, .td2 div {
+    color: transparent !important;
+    padding-left: 4px;
+}
+.td1 div:hover small a, .td2 div:hover small a {
+    color:#ffa500;
+    transition: all 0.8s ease 0s;
+}
+
+/* 	COVER NECESSITIES	*/
+
+.table_header:nth-of-type(6), span[id*="tagLinks"], div[id*="tagChangeRow"] {
+    display: none !important;
+}
+td[class^="td"]:nth-of-type(6) {
+    width: 0;
+}
+span[id*="tagRow"] {
+    background-color: rgba( 121, 64, 68, 0.7) !important;
+    border: 2px solid #fe6dbc;
+    border-radius: 0px 12px 12px 0px;
+    display: block !important;
+    line-height:15px !important;
+    padding: 8px 8px 8px ;
+    position: fixed;
+    left: 938px;
+    text-shadow: 0 0 0 #000000 !important;
+    visibility: hidden;
+    width: 199px;
+    top: 20px !important;
+    transition: all 0s ease 0s;
+    height:282px;
+    box-shadow: 0 2px 2px #000000;
+}
+span[id*="tagRow"]:before {
+    content:"Review: ";
+    color:#ffc3a0;
+}
+tr:hover span[id*="tagRow"] {
+    color: white !important;
+    visibility: visible;
+}
+
+:hover + .hide {
+    background-color: #e9967a;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: auto auto !important;
+    box-shadow: 0 2px 2px #000000;
+    display: block !important;
+    height: 250px;
+    padding: 39px 22px 9px 10px;
+    position: fixed;
+    top: 20px;
+    left: 720px;
+    width: 183px;
+    border-radius: 12px 0px 0px 12px;
+    border: 2px solid #fe6dbc;
+}
+
+[class^="header_"] * {
+    background-repeat: no-repeat no-repeat;
+    font-size: 0;
+    height: 345px;
+    line-height: 24px;
+    padding-bottom: 50px;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+
+.header_title {
+    border-radius 4px 4px 4px 4px;
+    color: #ffffff;
+    display: inline-block;
+    font-style: italic;
+    height: auto;
+    padding: 0 8px 0 0;
+    text-shadow: 0 1px 1px rgba(0 , 0 , 0 , 0.15);
+}
+.header_cw {
+    background-color: transparent;
+    background-image: url("http://i.imgur.com/eNr2HbA.png");
+    background-position: 50% 2px;
+    background-repeat: no-repeat no-repeat;
+    height: 350px;
+    margin-bottom: -45px;
+}
+.header_completed {
+    background-color: transparent;
+    background-image: url("http://i.imgur.com/nMizhSe.png");
+    background-position: 50% 2px;
+    background-repeat: no-repeat no-repeat;
+    margin-bottom: -44px;
+    z-index: 0;
+}
+.header_onhold {
+    background-color: transparent;
+    background-image: url("http://i.imgur.com/B0by45J.png");
+    background-position: 50% 2px;
+    background-repeat: no-repeat no-repeat;
+    height: 200px;
+    margin-bottom: -44px;
+}
+.header_dropped {
+    background-color: transparent;
+    background-image: url("http://i.imgur.com/uv0RhOJ.png");
+    background-position: 50% 2px;
+    background-repeat: no-repeat no-repeat;
+    height: 200px;
+    margin-bottom: -44px;
+}
+.header_ptw {
+    background-color: transparent;
+    background-image: url("http://i.imgur.com/k8GoyQg.png");
+    background-position: 50% 2px;
+    background-repeat: no-repeat no-repeat;
+    height: 200px;
+    margin-bottom: -44px;
+}
+
+/*         CATEGORY LINKS	*/
+
+.status_not_selected a {
+transition: all 0.15s ease-in-out 0s;
+}
+
+.status_not_selected a[href*="status=1"] {
+background-image: url(http://i.imgur.com/8qLvriu.png);
+top: 60px;
+right: -190px;
+}
+
+.status_selected a[href*="status=1"], .status_not_selected a[href*="status=1"]:hover {
+background-image: url(http://i.imgur.com/8qLvriu.png);
+top: 60px;
+right: -5px;
+}
+
+.status_not_selected a[href*="status=2"] {
+background-image: url(http://i.imgur.com/yAm7zK1.png);
+top: 150px;
+right: -190px;
+}
+
+.status_selected a[href*="status=2"], .status_not_selected a[href*="status=2"]:hover {
+background-image: url(http://i.imgur.com/yAm7zK1.png);
+top: 150px;
+right: -5px;
+}
+
+.status_not_selected a[href*="status=3"] {
+background-image: url(http://i.imgur.com/Fsr7HkG.png);
+top: 240px;
+right: -190px;
+}
+
+.status_selected a[href*="status=3"], .status_not_selected a[href*="status=3"]:hover {
+background-image: url(http://i.imgur.com/Fsr7HkG.png);
+top: 240px;
+right: -5px;
+}
+
+.status_not_selected a[href*="status=4"] {
+background-image: url(http://i.imgur.com/d19wQVd.png);
+top: 330px;
+right: -190px;
+}
+
+.status_selected a[href*="status=4"], .status_not_selected a[href*="status=4"]:hover {
+background-image: url(http://i.imgur.com/d19wQVd.png);
+top: 330px;
+right: -5px;
+}
+
+.status_not_selected a[href*="status=6"] {
+background-image: url(http://i.imgur.com/9xsP9bN.png);
+top: 420px;
+right: -190px;
+}
+
+.status_selected a[href*="status=6"], .status_not_selected a[href*="status=6"]:hover {
+background-image: url(http://i.imgur.com/9xsP9bN.png);
+top: 420px;
+right: -5px;
+}
+
+.status_not_selected a[href*="status=7"] {
+background-image: url(http://i.imgur.com/pzXuLzs.png);
+top: 510px;
+right: -190px;
+}
+
+.status_selected a[href*="status=7"], .status_not_selected a[href*="status=7"]:hover {
+background-image: url(http://i.imgur.com/pzXuLzs.png);
+top: 510px;
+right: -5px;
+}
+
+.status_selected a, .status_not_selected a {
+color: transparent !important;
+text-decoration: none !important;
+text-align: left;
+font-size: 20px;
+font-family: ;
+}
+
+.status_selected a[href*="status=1"],
+.status_selected a[href*="status=2"],
+.status_selected a[href*="status=3"],
+.status_selected a[href*="status=4"],
+.status_selected a[href*="status=6"],
+.status_selected a[href*="status=7"],
+.status_not_selected a[href*="status=1"],
+.status_not_selected a[href*="status=2"],
+.status_not_selected a[href*="status=3"],
+.status_not_selected a[href*="status=4"],
+.status_not_selected a[href*="status=6"],
+.status_not_selected a[href*="status=7"] {
+background-color: transparent;
+background-position: left top;
+background-repeat: repeat repeat;
+display: block;
+height: 80px;
+width: 290px;
+padding-left: 6px !important;
+overflow: auto;
+padding: 0;
+border: #8b7355 2px solid;
+border-radius: 11px 0px 0px 11px;
+position: fixed;
+}
+
+/* 	COPYRIGHT	*/
+
+
+#copyright:after {
+    content: "Originally designed and made by Lycelra.Time_Yeroloe hold the credits on making pictures for me!";
+    color: #ff8c00;
+    font-size: 14px;
+}
+
+#copyright {
+    background-color: #ffd39b;
+    border: 2px solid #8b7355;
+    border-radius: 12px;
+    color: #8b2323;
+    display: block;
+    margin-top: 5px !important;
+    padding: 2px 14px 4px;
+    position: relative;
+    transition: all 0.4s ease-out 0s;
+}
+
+#copyright:hover {
+    padding-top: 10px;
+    height: 299px;
+    background-attachment:scroll;
+    background-image:url(http://i.imgur.com/C6PwGF8.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    transition: all 0.4s ease-out 0s;
+}
+
+#copyright a {
+    color: #8b2323;
+    font-size: 14px;
+    padding-right: 2px;
+    text-shadow: 1px 1px #f5a66d;
+}
+
+/*	TOP MENU BAR	        */
+
+#mal\_control_strip:before {
+	position: absolute;
+	display: block;
+	content: 'Menu';
+	margin-top: 190px;
+	left: 15px !important;
+	padding: 4px 8px;
+	background-color: #f5f5dc;
+	border-radius: 0 0 1em 1em;
+  border: 1px solid #794044;
+  width: 80px;
+  text-align:center;
+} 
+
+#mal\_control_strip {
+	position: fixed !important;
+	display: block !important;
+	margin-top: -192px !important;
+	height: 190px !important;
+	width: 128px !important;
+  left: 62px !important;
+	border-top: none;
+	background: url('http://i.imgur.com/6YxiTmr.png') no-repeat center top #f5f5dc !important;
+	border-radius: 0 0 1em 1em;
+	transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+	z-index: 10;
+  border: 1px solid #794044;
+}
+
+#mal\_control_strip:after {
+	position: fixed;
+	display: block;
+	content: '';
+	left: 0;
+	top: -300px;
+	width: 100%;
+	height: 300px;
+	box-shadow: 0 0 20px #f5f5dc;
+} 
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+#mal\_control_strip a:hover { text-decoration: underline !important; }
+
+#mal\_control_strip:hover { margin-top: 0 !important; }
+
+#mal\_control_strip, #mal\_control_strip a, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a { 
+	font-family: 'Viga', sans-serif !important;
+	color: #fa8072 !important;
+	font-size: 16px !important;
+}
+
+#mal\_control_strip td {
+	display: block !important;
+	width: 100px !important; 
+}
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic img, #mal\_cs_otherlinks strong, #search,
+#mal\_cs_otherlinks div a[href*="sharedanime"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none !important; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) {  color: transparent !important; } 
+
+/* Username, Logout */
+#mal\_cs_listinfo div { margin: 0 !important; } 
+
+#mal\_cs_listinfo div a {
+	position: relative !important; 
+	display: block !important; 
+	top: 68px !important;
+	line-height: 18px !important;
+}
+
+/* Add to List, Home, Anime List, Manga List */
+#mal\_cs_links div { margin: 0 !important; }
+
+#mal\_cs_links div a {
+	position: relative !important; 
+	display: inline-block !important; 
+	top: 68px !important;
+	line-height: 18px !important;
+}
+
+#mal\_cs_links div a[href*="addtolist"] { font-weight: 600 !important; }
+
+/* History, Forum, Export */
+#mal\_cs_otherlinks div a[href*="history"], #mal\_cs_otherlinks div a[href*="forum"], #mal\_cs_otherlinks div a[href*="export"], #mal\_cs_otherlinks div a[href*="mangalist"]  { 
+	display: none !important; 
+} 
+
+/* Log in, Create list, Learn more */
+#mal\_cs_otherlinks div { margin: 0 !important; } 
+
+#mal\_cs_otherlinks div a { 
+	position: relative !important; 
+	display: block !important; 
+	top: 28px !important;
+	line-height: 18px !important;
+}
+
+#mal\_cs_otherlinks div a[href*="login"] { font-weight: 600 !important; }
+
+/* Missing Covers */
+#more23847 {
+background-image: url(http://i.imgur.com/DtLbDv9.png);
+background-size: cover;
+}
+/* end https://dl.dropboxusercontent.com/s/5bqt28s7mhd7onf/Nekopara.css?dl=0 */
