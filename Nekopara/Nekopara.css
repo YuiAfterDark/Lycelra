@@ -1,7 +1,6 @@
 /* Nekopara Theme made by Lycelra_*/
 /* For more info please visit http://myanimelist.net/forum/?topicid=1397924 */
 
-/* begin https://dl.dropboxusercontent.com/s/5bqt28s7mhd7onf/Nekopara.css?dl=0 */
 /*			 
 /       This is my first project.	 
 /	       ^_^		 
@@ -592,10 +591,3 @@ position: fixed;
 }
 
 #mal\_cs_otherlinks div a[href*="login"] { font-weight: 600 !important; }
-
-/* Missing Covers */
-#more23847 {
-background-image: url(http://i.imgur.com/DtLbDv9.png);
-background-size: cover;
-}
-/* end https://dl.dropboxusercontent.com/s/5bqt28s7mhd7onf/Nekopara.css?dl=0 */
