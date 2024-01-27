@@ -1,6 +1,6 @@
 # Nekopara
 
-![gallery/overview.jpg]
+![](gallery/overview.jpg)
 
 ### Info
 
