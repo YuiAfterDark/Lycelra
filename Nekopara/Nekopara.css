@@ -10,6 +10,7 @@
 /		                 */
 
 @\import "https://fonts.googleapis.com/css?family=Viga";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
 
 * {
 	text-decoration: none;
